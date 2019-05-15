@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0792D953B9857EBACD34D156 /* Pods_CpPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB2F5BD7B7E5136B4A121348 /* Pods_CpPractice.framework */; };
+		74208F07228BEF3100619263 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74208F06228BEF3100619263 /* MainCollectionViewCell.swift */; };
+		74208F09228C03D500619263 /* MainCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74208F08228C03D500619263 /* MainCollectionHeaderView.swift */; };
+		74208F0F228C1EE500619263 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74208F0E228C1EE500619263 /* BaseViewController.swift */; };
 		7469A448228BD05D0080E2C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7469A447228BD05D0080E2C5 /* AppDelegate.swift */; };
 		7469A44A228BD05D0080E2C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7469A449228BD05D0080E2C5 /* ViewController.swift */; };
 		7469A44D228BD05D0080E2C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7469A44B228BD05D0080E2C5 /* Main.storyboard */; };
@@ -15,6 +18,7 @@
 		7469A452228BD05E0080E2C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7469A450228BD05E0080E2C5 /* LaunchScreen.storyboard */; };
 		7469A45D228BD05E0080E2C5 /* CpPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7469A45C228BD05E0080E2C5 /* CpPracticeTests.swift */; };
 		7469A468228BD05E0080E2C5 /* CpPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7469A467228BD05E0080E2C5 /* CpPracticeUITests.swift */; };
+		7469A47B228BE23D0080E2C5 /* HeaderFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7469A47A228BE23D0080E2C5 /* HeaderFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,9 @@
 /* Begin PBXFileReference section */
 		38A7D6D53700DA7E3D32EC52 /* Pods-CpPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CpPractice.release.xcconfig"; path = "Target Support Files/Pods-CpPractice/Pods-CpPractice.release.xcconfig"; sourceTree = "<group>"; };
 		3E6D89DA5396DF8C6EB9128A /* Pods-CpPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CpPractice.debug.xcconfig"; path = "Target Support Files/Pods-CpPractice/Pods-CpPractice.debug.xcconfig"; sourceTree = "<group>"; };
+		74208F06228BEF3100619263 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		74208F08228C03D500619263 /* MainCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionHeaderView.swift; sourceTree = "<group>"; };
+		74208F0E228C1EE500619263 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7469A444228BD05D0080E2C5 /* CpPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CpPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7469A447228BD05D0080E2C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7469A449228BD05D0080E2C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +57,7 @@
 		7469A463228BD05E0080E2C5 /* CpPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CpPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7469A467228BD05E0080E2C5 /* CpPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CpPracticeUITests.swift; sourceTree = "<group>"; };
 		7469A469228BD05E0080E2C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7469A47A228BE23D0080E2C5 /* HeaderFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderFile.swift; sourceTree = "<group>"; };
 		CB2F5BD7B7E5136B4A121348 /* Pods_CpPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CpPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -105,7 +113,11 @@
 			isa = PBXGroup;
 			children = (
 				7469A447228BD05D0080E2C5 /* AppDelegate.swift */,
+				7469A47A228BE23D0080E2C5 /* HeaderFile.swift */,
 				7469A449228BD05D0080E2C5 /* ViewController.swift */,
+				74208F06228BEF3100619263 /* MainCollectionViewCell.swift */,
+				74208F08228C03D500619263 /* MainCollectionHeaderView.swift */,
+				74208F0E228C1EE500619263 /* BaseViewController.swift */,
 				7469A44B228BD05D0080E2C5 /* Main.storyboard */,
 				7469A44E228BD05E0080E2C5 /* Assets.xcassets */,
 				7469A450228BD05E0080E2C5 /* LaunchScreen.storyboard */,
@@ -146,7 +158,6 @@
 				3E6D89DA5396DF8C6EB9128A /* Pods-CpPractice.debug.xcconfig */,
 				38A7D6D53700DA7E3D32EC52 /* Pods-CpPractice.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -341,7 +352,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7469A44A228BD05D0080E2C5 /* ViewController.swift in Sources */,
+				74208F09228C03D500619263 /* MainCollectionHeaderView.swift in Sources */,
+				7469A47B228BE23D0080E2C5 /* HeaderFile.swift in Sources */,
 				7469A448228BD05D0080E2C5 /* AppDelegate.swift in Sources */,
+				74208F07228BEF3100619263 /* MainCollectionViewCell.swift in Sources */,
+				74208F0F228C1EE500619263 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,7 +532,9 @@
 			baseConfigurationReference = 3E6D89DA5396DF8C6EB9128A /* Pods-CpPractice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = CpPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -525,6 +542,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.CpPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -535,7 +553,9 @@
 			baseConfigurationReference = 38A7D6D53700DA7E3D32EC52 /* Pods-CpPractice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = CpPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -543,6 +563,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.CpPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
