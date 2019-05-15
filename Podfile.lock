@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (5.0.0-beta.6)
+  - ESPullToRefresh (2.9)
+  - IQKeyboardManagerSwift (6.3.0)
+  - ReachabilitySwift (4.3.1)
+  - SnapKit (5.0.0)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.0.0-beta.5)
+  - ESPullToRefresh (~> 2.9)
+  - IQKeyboardManagerSwift (~> 6.3)
+  - ReachabilitySwift (~> 4.3)
+  - SnapKit (~> 5.0)
+  - SwiftyJSON (~> 5.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - ESPullToRefresh
+    - IQKeyboardManagerSwift
+    - ReachabilitySwift
+    - SnapKit
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: cd08a4402bd12cacd0c66f23fb12fec8d6b965e4
+  ESPullToRefresh: ce058a36454a5032519cc9d8b45da217728cf104
+  IQKeyboardManagerSwift: a8228c257614af98743b4cd8584637025f36358f
+  ReachabilitySwift: 4032e2f59586e11e3b0ebe15b167abdd587a388b
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: 96d16879cee095d3b5871fea4476d2203b7f8aaa
+
+COCOAPODS: 1.6.1
