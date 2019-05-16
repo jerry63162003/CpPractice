@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  CpPractice
 //
 //  Created by dev10001 fh on 15/05/2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: BaseViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class HomeViewController: BaseViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     var dataArr = NSMutableArray()
     var dataArray = NSMutableArray()
@@ -49,6 +49,10 @@ class ViewController: BaseViewController, UICollectionViewDelegate, UICollection
         getData()
         getSection2Data()
         initHeaderData()
+        
+        registerBtn.isHidden = false
+        loginrBtn.isHidden = false
+        
         self.view.addSubview(mainHeaderView)
         mainHeaderView.snp.makeConstraints { (make) in
             make.top.equalTo(self.view).offset(BASE_NAV_HEIGHT(screenHeight: MAIN_SCREEN_HEIGHT))
@@ -62,7 +66,6 @@ class ViewController: BaseViewController, UICollectionViewDelegate, UICollection
             make.top.equalTo(self.mainHeaderView.snp.bottom)
             make.left.bottom.right.equalTo(self.view)
             make.width.equalTo(MAIN_SCREEN_WIDTH)
-            make.height.equalTo(MAIN_SCREEN_HEIGHT)
         }
     }
     

@@ -16,6 +16,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // 初始化 self.window
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
+        let tabBarController = TabBarViewController()
+        self.window?.rootViewController = tabBarController
+        
+        let homeVC = HomeViewController()
+        homeVC.tabBarItem = UITabBarItem(title: "首頁", image: #imageLiteral(resourceName: "home"), tag: 0)
+        let buyHallVC = BuyHallViewController()
+        buyHallVC.tabBarItem = UITabBarItem(title: "購彩大廳", image: #imageLiteral(resourceName: "buy_hall"), tag: 1)
+        let AnnouncementVC = AnnouncementViewController()
+        AnnouncementVC.tabBarItem = UITabBarItem(title: "開獎公告", image: #imageLiteral(resourceName: "announcement"), tag: 2)
+        let activityVC = ActivitiesViewController()
+        activityVC.tabBarItem = UITabBarItem(title: "優惠活動", image: #imageLiteral(resourceName: "activity"), tag: 3)
+        let mineVC = MineViewController()
+        mineVC.tabBarItem = UITabBarItem(title: "我的帳號", image: #imageLiteral(resourceName: "mine"), tag: 4)
+        tabBarController.viewControllers = [homeVC, buyHallVC, AnnouncementVC, activityVC, mineVC]
+        tabBarController.tabBar.tintColor = #colorLiteral(red: 0.1579992771, green: 0.1818160117, blue: 0.5072338581, alpha: 1)
+        tabBarController.tabBar.backgroundColor = GLOBAL_APP_COLOR
+        // 把 window 顯示出來
+        self.window?.makeKeyAndVisible()
         return true
     }
 
