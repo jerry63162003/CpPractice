@@ -14,12 +14,20 @@ import UIKit
 
 let MAIN_SCREEN_WIDTH = UIScreen.main.bounds.width
 let MAIN_SCREEN_HEIGHT = UIScreen.main.bounds.height
+
 let MAIN_BG_COLOR = UIColor(red:0.94, green:0.94, blue:0.94, alpha:1.0)
 let GLOBAL_APP_COLOR = UIColor(red:1.00, green:0.39, blue:0.04, alpha:1.0)
+let SUB_TITLE_TEX_COLOR = UIColor(red:0.60, green:0.60, blue:0.60, alpha:1.0)
+
 let BASE_BTN_DISTANCE = 20
+let ANNOUNCEMENT_TABLE_HEIGHT = 90
 
 func FONT (value: CGFloat) -> UIFont {
     return UIFont.systemFont(ofSize: value)
+}
+
+func BOLD_FONT (value: CGFloat) -> UIFont {
+    return UIFont.boldSystemFont(ofSize: value)
 }
 
 func BASE_NAV_HEIGHT (screenHeight: CGFloat) -> CGFloat {

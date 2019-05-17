@@ -25,6 +25,8 @@
 		7499C77D228D168D005F3FBC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7469A449228BD05D0080E2C5 /* HomeViewController.swift */; };
 		7499C77F228D16CD005F3FBC /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7499C77E228D16CD005F3FBC /* ActivitiesViewController.swift */; };
 		7499C781228D16D8005F3FBC /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7499C780228D16D8005F3FBC /* MineViewController.swift */; };
+		74FF008F228E6C7D00A3DC65 /* AnnouncementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF008E228E6C7D00A3DC65 /* AnnouncementTableViewCell.swift */; };
+		74FF0091228E80FE00A3DC65 /* BallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF0090228E80FE00A3DC65 /* BallView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		7499C77B228D154A005F3FBC /* AnnouncementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementViewController.swift; sourceTree = "<group>"; };
 		7499C77E228D16CD005F3FBC /* ActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
 		7499C780228D16D8005F3FBC /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		74FF008E228E6C7D00A3DC65 /* AnnouncementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementTableViewCell.swift; sourceTree = "<group>"; };
+		74FF0090228E80FE00A3DC65 /* BallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallView.swift; sourceTree = "<group>"; };
 		CB2F5BD7B7E5136B4A121348 /* Pods_CpPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CpPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -182,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				74208F0E228C1EE500619263 /* BaseViewController.swift */,
+				74FF0090228E80FE00A3DC65 /* BallView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				7499C77B228D154A005F3FBC /* AnnouncementViewController.swift */,
+				74FF008E228E6C7D00A3DC65 /* AnnouncementTableViewCell.swift */,
 			);
 			path = Announcement;
 			sourceTree = "<group>";
@@ -435,6 +441,7 @@
 				74208F09228C03D500619263 /* MainCollectionHeaderView.swift in Sources */,
 				7499C781228D16D8005F3FBC /* MineViewController.swift in Sources */,
 				7499C77F228D16CD005F3FBC /* ActivitiesViewController.swift in Sources */,
+				74FF0091228E80FE00A3DC65 /* BallView.swift in Sources */,
 				7469A47B228BE23D0080E2C5 /* HeaderFile.swift in Sources */,
 				7499C771228D102F005F3FBC /* TabBarButton.swift in Sources */,
 				7499C77C228D154A005F3FBC /* AnnouncementViewController.swift in Sources */,
@@ -444,6 +451,7 @@
 				7499C77D228D168D005F3FBC /* HomeViewController.swift in Sources */,
 				7499C76D228D1001005F3FBC /* TabBarViewController.swift in Sources */,
 				74208F07228BEF3100619263 /* MainCollectionViewCell.swift in Sources */,
+				74FF008F228E6C7D00A3DC65 /* AnnouncementTableViewCell.swift in Sources */,
 				74208F0F228C1EE500619263 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

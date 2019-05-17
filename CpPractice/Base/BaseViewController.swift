@@ -9,10 +9,14 @@
 import UIKit
 
 class BaseViewController: UIViewController {
-
+    //right
     var registerBtn = UIButton()
-    var loginrBtn = UIButton()
     var changeListType = UIButton()
+    //mid title
+    var titleLab = UILabel()
+    //left
+    var loginrBtn = UIButton()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +32,7 @@ class BaseViewController: UIViewController {
         bgView.backgroundColor = GLOBAL_APP_COLOR
         
         //right Btn
+        //register
         registerBtn.isHidden = true
         registerBtn.setTitle("註冊", for: .normal)
         bgView.addSubview(registerBtn)
@@ -35,16 +40,28 @@ class BaseViewController: UIViewController {
             make.right.equalTo(bgView).offset(-BASE_BTN_DISTANCE)
             make.bottom.equalTo(bgView)
         })
+        //changeList
         changeListType.isHidden = true
         changeListType.setImage(UIImage.init(named: "other_list_type"), for: .normal)
         bgView.addSubview(changeListType)
         changeListType.snp.makeConstraints({ (make) in
             make.right.equalTo(bgView).offset(-BASE_BTN_DISTANCE)
             make.bottom.equalTo(bgView)
+            make.height.width.equalTo(40)
         })
         
+        //mid title
+        titleLab.isHidden = true
+        titleLab.font = FONT(value: 20)
+        titleLab.textColor = .white
+        bgView.addSubview(titleLab)
+        titleLab.snp.makeConstraints({ (make) in
+            make.centerX.equalTo(bgView)
+            make.bottom.equalTo(bgView).offset(-5)
+        })
         
         //left Btn
+        //login
         loginrBtn.isHidden = true
         loginrBtn.setTitle("登入", for: .normal)
         bgView.addSubview(loginrBtn)
