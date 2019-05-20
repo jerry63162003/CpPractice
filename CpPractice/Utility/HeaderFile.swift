@@ -20,7 +20,6 @@ let GLOBAL_APP_COLOR = UIColor(red:1.00, green:0.39, blue:0.04, alpha:1.0)
 let SUB_TITLE_TEX_COLOR = UIColor(red:0.60, green:0.60, blue:0.60, alpha:1.0)
 
 let BASE_BTN_DISTANCE = 20
-let ANNOUNCEMENT_TABLE_HEIGHT = 90
 
 func FONT (value: CGFloat) -> UIFont {
     return UIFont.systemFont(ofSize: value)
@@ -41,3 +40,21 @@ func BASE_NAV_HEIGHT (screenHeight: CGFloat) -> CGFloat {
     
     return height
 }
+
+func TABLEVIEW_HEIGHT (titleText: String) -> CGFloat {
+    var height = CGFloat()
+    switch titleText {
+    case "AnnouncementTableViewCell":
+        height = 80
+        break
+    case "ActivitiesTableViewCell":
+        height = 210
+        break
+        
+    default:
+        height = 90
+        break
+    }
+    return height
+}
+

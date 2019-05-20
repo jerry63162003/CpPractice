@@ -10,6 +10,7 @@ import UIKit
 
 class AnnouncementTableViewCell: UITableViewCell {
 
+    var cellHeight: CGFloat!
     var lotteryTypeImageView: UIImageView!
     var lotteryNameLab: UILabel!
     var termLab: UILabel!
@@ -18,7 +19,7 @@ class AnnouncementTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
+        cellHeight = TABLEVIEW_HEIGHT(titleText: reuseIdentifier!)
         setUpConstraint()
     }
     
@@ -37,7 +38,7 @@ class AnnouncementTableViewCell: UITableViewCell {
         lotteryTypeImageView.snp.makeConstraints { (make) in
             make.centerY.equalTo(self)
             make.left.equalTo(self).offset(5)
-            make.width.height.equalTo(ANNOUNCEMENT_TABLE_HEIGHT * 7 / 9)
+            make.width.height.equalTo(cellHeight * 3 / 4)
         }
         
 //        lotteryNameLab.text = "新疆時時彩"
@@ -79,7 +80,7 @@ class AnnouncementTableViewCell: UITableViewCell {
             self.addSubview(ballView)
             ballView.snp.makeConstraints { (make) in
                 make.left.equalTo(lotteryNameLab).offset(i * 30)
-                make.centerY.equalTo(self).offset(ANNOUNCEMENT_TABLE_HEIGHT / 5)
+                make.centerY.equalTo(self).offset(cellHeight / 5)
                 make.width.height.equalTo(30)
             }
         }
@@ -89,15 +90,4 @@ class AnnouncementTableViewCell: UITableViewCell {
         fatalError("init(coder:)")
     }
     
-//    override func awakeFromNib() {
-//        super.awakeFromNib()
-//        // Initialization code
-//    }
-//
-//    override func setSelected(_ selected: Bool, animated: Bool) {
-//        super.setSelected(selected, animated: animated)
-//
-//        // Configure the view for the selected state
-//    }
-
 }

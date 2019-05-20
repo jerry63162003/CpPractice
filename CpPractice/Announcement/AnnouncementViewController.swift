@@ -11,6 +11,7 @@ import UIKit
 class AnnouncementViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
     
     var fakeArr: NSMutableArray!
+    var cellIdentifier: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,8 +27,9 @@ class AnnouncementViewController: BaseViewController, UITableViewDelegate, UITab
     }
     
     lazy var mainTableView: UITableView = {
+        cellIdentifier = "AnnouncementTableViewCell"
         let mainTableView = UITableView.init(frame: CGRect.zero, style: .plain)
-        mainTableView.register(AnnouncementTableViewCell.self, forCellReuseIdentifier: "cell")
+        mainTableView.register(AnnouncementTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         mainTableView.delegate = self
         mainTableView.dataSource = self
         mainTableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
@@ -40,13 +42,13 @@ class AnnouncementViewController: BaseViewController, UITableViewDelegate, UITab
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! AnnouncementTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! AnnouncementTableViewCell
         cell.configView(dict: fakeArr[indexPath.row] as! NSDictionary)
         return cell
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CGFloat(ANNOUNCEMENT_TABLE_HEIGHT)
+        return TABLEVIEW_HEIGHT(titleText: cellIdentifier)
     }
     
     func setFakeArr() {
