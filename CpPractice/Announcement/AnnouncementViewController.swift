@@ -12,6 +12,16 @@ class AnnouncementViewController: BaseViewController, UITableViewDelegate, UITab
     
     var fakeArr: NSMutableArray!
     var cellIdentifier: String!
+    lazy var mainTableView: UITableView = {
+        cellIdentifier = "AnnouncementTableViewCell"
+        let mainTableView = UITableView.init(frame: CGRect.zero, style: .plain)
+        mainTableView.register(AnnouncementTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+        mainTableView.delegate = self
+        mainTableView.dataSource = self
+        mainTableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        mainTableView.backgroundColor = .white
+        return mainTableView
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,17 +35,6 @@ class AnnouncementViewController: BaseViewController, UITableViewDelegate, UITab
             make.left.bottom.right.equalTo(self.view)
         }
     }
-    
-    lazy var mainTableView: UITableView = {
-        cellIdentifier = "AnnouncementTableViewCell"
-        let mainTableView = UITableView.init(frame: CGRect.zero, style: .plain)
-        mainTableView.register(AnnouncementTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
-        mainTableView.delegate = self
-        mainTableView.dataSource = self
-        mainTableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        mainTableView.backgroundColor = .white
-        return mainTableView
-    }()
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return fakeArr.count

@@ -18,6 +18,9 @@
 		7469A468228BD05E0080E2C5 /* CpPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7469A467228BD05E0080E2C5 /* CpPracticeUITests.swift */; };
 		7469A47B228BE23D0080E2C5 /* HeaderFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7469A47A228BE23D0080E2C5 /* HeaderFile.swift */; };
 		74855115229271CB005FE749 /* ActivitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74855114229271CB005FE749 /* ActivitiesTableViewCell.swift */; };
+		748551172292AAFB005FE749 /* MineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748551162292AAFB005FE749 /* MineTableViewCell.swift */; };
+		748551192292B03A005FE749 /* MineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748551182292B03A005FE749 /* MineHeaderView.swift */; };
+		7485511B22939A16005FE749 /* MineFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7485511A22939A16005FE749 /* MineFooterView.swift */; };
 		7499C76D228D1001005F3FBC /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7499C76C228D1001005F3FBC /* TabBarViewController.swift */; };
 		7499C76F228D1014005F3FBC /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7499C76E228D1014005F3FBC /* TabBar.swift */; };
 		7499C771228D102F005F3FBC /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7499C770228D102F005F3FBC /* TabBarButton.swift */; };
@@ -67,6 +70,9 @@
 		7469A469228BD05E0080E2C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7469A47A228BE23D0080E2C5 /* HeaderFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderFile.swift; sourceTree = "<group>"; };
 		74855114229271CB005FE749 /* ActivitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesTableViewCell.swift; sourceTree = "<group>"; };
+		748551162292AAFB005FE749 /* MineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineTableViewCell.swift; sourceTree = "<group>"; };
+		748551182292B03A005FE749 /* MineHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineHeaderView.swift; sourceTree = "<group>"; };
+		7485511A22939A16005FE749 /* MineFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineFooterView.swift; sourceTree = "<group>"; };
 		7499C76C228D1001005F3FBC /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		7499C76E228D1014005F3FBC /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		7499C770228D102F005F3FBC /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
@@ -231,6 +237,9 @@
 			isa = PBXGroup;
 			children = (
 				7499C780228D16D8005F3FBC /* MineViewController.swift */,
+				748551162292AAFB005FE749 /* MineTableViewCell.swift */,
+				748551182292B03A005FE749 /* MineHeaderView.swift */,
+				7485511A22939A16005FE749 /* MineFooterView.swift */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -441,6 +450,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				748551172292AAFB005FE749 /* MineTableViewCell.swift in Sources */,
 				74855115229271CB005FE749 /* ActivitiesTableViewCell.swift in Sources */,
 				74208F09228C03D500619263 /* MainCollectionHeaderView.swift in Sources */,
 				7499C781228D16D8005F3FBC /* MineViewController.swift in Sources */,
@@ -450,8 +460,10 @@
 				7499C771228D102F005F3FBC /* TabBarButton.swift in Sources */,
 				7499C77C228D154A005F3FBC /* AnnouncementViewController.swift in Sources */,
 				7499C77A228D1533005F3FBC /* BuyHallViewController.swift in Sources */,
+				7485511B22939A16005FE749 /* MineFooterView.swift in Sources */,
 				7499C76F228D1014005F3FBC /* TabBar.swift in Sources */,
 				7469A448228BD05D0080E2C5 /* AppDelegate.swift in Sources */,
+				748551192292B03A005FE749 /* MineHeaderView.swift in Sources */,
 				7499C77D228D168D005F3FBC /* HomeViewController.swift in Sources */,
 				7499C76D228D1001005F3FBC /* TabBarViewController.swift in Sources */,
 				74208F07228BEF3100619263 /* MainCollectionViewCell.swift in Sources */,
@@ -554,7 +566,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -609,7 +621,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -624,10 +636,12 @@
 			baseConfigurationReference = 3E6D89DA5396DF8C6EB9128A /* Pods-CpPractice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 28BKK5G36G;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = CpPractice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -645,10 +659,12 @@
 			baseConfigurationReference = 38A7D6D53700DA7E3D32EC52 /* Pods-CpPractice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 28BKK5G36G;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = CpPractice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

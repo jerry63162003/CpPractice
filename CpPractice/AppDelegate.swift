@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         mineVC.tabBarItem = UITabBarItem(title: "我的帳號", image: #imageLiteral(resourceName: "mine"), tag: 4)
         tabBarController.viewControllers = [homeVC, buyHallVC, AnnouncementVC, activityVC, mineVC]
         tabBarController.tabBar.tintColor = #colorLiteral(red: 0.1579992771, green: 0.1818160117, blue: 0.5072338581, alpha: 1)
-        tabBarController.tabBar.backgroundColor = GLOBAL_APP_COLOR
+        tabBarController.tabBar.backgroundColor = MAIN_BG_COLOR
         // 把 window 顯示出來
         self.window?.makeKeyAndVisible()
         return true
